@@ -431,7 +431,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 50px 0;
   overflow: hidden;
 }
 
@@ -509,10 +509,27 @@ section {
   margin-top: 25px;
 }
 
-.about .content .icon-box h4 {
+.about .content .icon-box {
+  height: 72px;
+}
+
+.about .content .icon-box h4{
   font-size: 20px;
   font-weight: 700;
-  margin: 5px 0 10px 60px;
+  margin: 25px 0 0px 60px;
+}
+@media (max-width: 575px) {
+  .about .content .icon-box{
+    height: 52px;
+  }
+
+  .about .content .icon-box {
+    margin-top: 15px;
+  }
+}
+
+i.fedFastFix{
+  line-height: 72px;
 }
 
 .about .content .icon-box i {
@@ -558,40 +575,6 @@ section {
 @media (max-width: 667px) {
   .about .image img, .about .image2 img {
     max-width: 100%;
-  }
-}
-
-/*--------------------------------------------------------------
-# Clients
---------------------------------------------------------------*/
-.clients {
-  background: #f4f4f4;
-  padding: 15px 0;
-  text-align: center;
-}
-
-.clients img {
-  width: 50%;
-  filter: grayscale(100);
-  transition: all 0.4s ease-in-out;
-  display: inline-block;
-  padding: 15px 0;
-}
-
-.clients img:hover {
-  filter: none;
-  transform: scale(1.2);
-}
-
-@media (max-width: 768px) {
-  .clients img {
-    width: 40%;
-  }
-}
-
-@media (max-width: 575px) {
-  .clients img {
-    width: 50%;
   }
 }
 
