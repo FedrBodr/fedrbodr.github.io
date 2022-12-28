@@ -342,7 +342,8 @@ h6 {
 #hero {
   width: 100%;
   height: 80vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-bg.jpg") top center;
+  background-position-y: calc(100% - 40px);
   background-size: cover;
   position: relative;
   border-bottom: 1px solid #222;
@@ -706,6 +707,18 @@ i.fedFastFix{
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
+}
+
+h4.betterThen,
+h4.betterThen a {
+  font-size: 32px;
+  color: #4eb478;
+}
+
+.services h4.betterThen,
+.services .icon-box h4.betterThen a {
+  font-size: 32px;
+  color: #4eb478;
 }
 
 .services .icon-box h4 a {
@@ -1676,4 +1689,10 @@ i.fedFastFix{
   float: right;
   text-align: center;
   font-size: 13px;
+}
+
+.zeroMarginPadding,
+.zeroMarginPadding div.icon-box{
+  margin: 0;
+  padding: 0;
 }
