@@ -683,6 +683,10 @@ i.fedFastFix{
   padding-bottom: 30px;
 }
 
+.services {
+  padding: 20px 0;
+}
+
 .services .icon-box {
   margin-bottom: 20px;
   padding: 30px 15px;
@@ -1106,12 +1110,12 @@ i.fedFastFix{
 # Pricing
 --------------------------------------------------------------*/
 .pricing .row {
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
 .pricing .box {
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
   background: #fff;
   text-align: left;
@@ -1216,6 +1220,9 @@ i.fedFastFix{
     max-width: 90%;
     margin: 0 auto 30px auto;
   }
+
+#pricing > div > div.row.no-gutters {
+  margin-top: 10px;
 }
 
 /*--------------------------------------------------------------
