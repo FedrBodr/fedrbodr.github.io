@@ -1225,6 +1225,16 @@ i.fedFastFix{
   margin-top: 10px;
 }
 
+.requisites {
+  font-weight: bold;
+}
+
+@media (max-width: 450px) {
+  .requisites {
+    font-size: 12px;
+  }
+}
+
 /*--------------------------------------------------------------
 # F.A.Q
 --------------------------------------------------------------*/
