@@ -711,7 +711,7 @@ i.fedFastFix{
 
 h4.betterThen,
 h4.betterThen a {
-  font-size: 32px;
+  font-size: 42px;
   color: #4eb478;
 }
 
@@ -1132,6 +1132,7 @@ h4.betterThen a {
   box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
   background: #fff;
   text-align: left;
+  padding-bottom: 0;
 }
 
 .pricing h3 {
@@ -1140,8 +1141,19 @@ h4.betterThen a {
   font-size: 28px;
 }
 
+.features h2{
+  font-size: 48px;
+  color: #4eb478;
+}
 .pricing h4 {
-  font-size: 46px;
+  font-size: 52px;
+  color: #4eb478;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 25px;
+}
+
+.pricing h2 {
   color: #4eb478;
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
@@ -1152,6 +1164,10 @@ h4.betterThen a {
   color: #bababa;
   font-size: 18px;
   display: block;
+}
+
+.pricing .section-title span {
+  font-size: 43px;
 }
 
 .pricing ul {
@@ -1695,4 +1711,33 @@ h4.betterThen a {
 .zeroMarginPadding div.icon-box{
   margin: 0;
   padding: 0;
+}
+
+.mx-auto div.icon-box{
+  margin: 0;
+  padding: 0;
+}
+
+.accordion-button::after {
+  width: 40px;
+  height: 40px;
+  background-color: #4eb478;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.accordion-button::after {
+  flex-shrink: 0;
+  content: "";
+  background-image: var(--bs-accordion-btn-icon);
+  transition: var(--bs-accordion-btn-icon-transition);
+}
+
+.accordion-button::after,
+.accordion-button:not(.collapsed)::after {
+  background-size: 40px;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: var(--bs-accordion-btn-active-icon);
+  transform: var(--bs-accordion-btn-icon-transform);
 }
